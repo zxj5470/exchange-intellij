@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>com.github.zxj5470.exchange-intellij</id>
+    <name>Plugin display name here</name>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action class="com.github.zxj5470.exchangeij.ActionCopy"
+                id="com.github.zxj5470.exchangeij.ActionCopy">
+            <keyboard-shortcut first-keystroke="ctrl alt C" keymap="$default"/>
+        </action>
+        <action class="com.github.zxj5470.exchangeij.ActionV"
+                id="com.github.zxj5470.exchangeij.ActionV">
+            <keyboard-shortcut first-keystroke="ctrl alt V" keymap="$default"/>
+        </action>
+    </actions>
+</idea-plugin>
